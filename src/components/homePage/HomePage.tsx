@@ -1,13 +1,13 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import Header from "./components/Header";
-function App() {
+import Header from "../Header";
+function HomePage() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="h-screen w-full">
-        <Header />p
+        <Header />
       </div>
     </ThemeProvider>
   );
 }
 
-export default App;
+export default HomePage;
