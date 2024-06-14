@@ -43,7 +43,7 @@ function Header() {
                                 {obj2?.items &&
                                   obj2.items.map((item, idx) => (
                                     <ListItem
-                                      href="/pistols/usp"
+                                      url={`/skins/${obj.subCategory}/${obj2.name}/${item.name}`}
                                       title={item.name}
                                       key={`${obj.category}-${idx}`}
                                       imgSrc={item.skinUrl}
@@ -77,7 +77,7 @@ function Header() {
                             return (
                               <ListItem
                                 imgSrc={item.skinUrl}
-                                href="/pistols/usp"
+                                url={`/skins/${obj.category}/${item.name}`}
                                 key={`${obj.category}-${idx}`}
                               >
                                 {item.name}
