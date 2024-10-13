@@ -35,6 +35,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, Props>(
                 height={38}
                 onLoad={handleImageLoad}
                 style={{ display: test ? "block" : "none" }}
+                className="animate-in fade-in"
               />
             </div>
             <div className="text-sm font-medium leading-none">{title}</div>

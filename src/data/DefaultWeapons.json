@@ -285,6 +285,20 @@
           "skinUrl": "https://cdn.csgoskins.gg/public/uih/weapons/aHR0cHM6Ly9jZG4uY3Nnb3NraW5zLmdnL3B1YmxpYy9pbWFnZXMvYnVja2V0cy9lY29uL2RlZmF1bHRfZ2VuZXJhdGVkL3Nwb3J0eV9nbG92ZXNfc3BvcnR5X2JsYWNrX3dlYmJpbmdfeWVsbG93X2xpZ2h0LmQ0ZWVkMzk4Mjg5YWQ5MjNjYTUxOGM4ODFmMzYyNjkwMTdkZjYyOTEucG5n/auto/auto/85/notrim/49c87e5e6565fc0614a117f9ea135eb3.webp"
         }
       ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {
+          "name": "Stickers",
+          "skinUrl": "https://cdn.csgoskins.gg/public/uih/categories/aHR0cHM6Ly9jc2dvc2tpbnMuZ2cvbWVkaWEvaW1hZ2VzL2NhdGVnb3JpZXMvc3RpY2tlci5wbmc-/50/auto/85/notrim/11afd660171d7baf1d7e8c12eceb1868.webp"
+        },
+
+        {
+          "name": "Agents",
+          "skinUrl": "https://cdn.csgoskins.gg/public/uih/categories/aHR0cHM6Ly9jc2dvc2tpbnMuZ2cvbWVkaWEvaW1hZ2VzL2NhdGVnb3JpZXMvYWdlbnQucG5n/50/auto/85/notrim/e02f62a2e6f6c3cfe180aa0905e2a43f.webp"
+        }
+      ]
     }
   ]
 }
