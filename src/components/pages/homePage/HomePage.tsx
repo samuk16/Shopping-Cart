@@ -107,7 +107,7 @@ function HomePage() {
               <div className="flex flex-col gap-6">
                 <div className="flex justify-between">
                   <div className="flex items-center pl-5">
-                    <img src="src/assets/cs_logo.svg" alt="logo" />
+                    <img src="/cs_logo.svg" alt="logo" />
                     <h3 className="font-bold text-lg md:text-3xl">
                       Popular CS2 items
                     </h3>
