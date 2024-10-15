@@ -51,7 +51,7 @@ function Header({ cartProducts, setCartProducts }: HeaderProps) {
   const match = useMediaQuery("(min-width: 768px)");
 
   return (
-    <header className="flex h-16 w-full items-center justify-between p-4">
+    <header className="flex h-16 w-full items-center justify-between p-4 max-lg:sticky max-lg:top-0 max-lg:z-20 max-lg:backdrop-blur-md max-lg:border-b">
       <div className="flex gap-3">
         <Link to={"/"} unstable_viewTransition>
           <div className="flex gap-3 cursor-pointer">
@@ -164,7 +164,7 @@ function Header({ cartProducts, setCartProducts }: HeaderProps) {
               <Menu />
             </Button>
 
-            <DrawerContent className="h-full">
+            <DrawerContent className="h-full z-30">
               <DrawerHeader className="grid  grid-cols-[1fr_auto]">
                 <DrawerTitle>Menu</DrawerTitle>
                 <DrawerDescription className="row-start-2">

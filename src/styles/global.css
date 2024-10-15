@@ -87,9 +87,9 @@
   z-index: -1;
 }
 
-#root {
+/* #root {
   overflow: hidden;
-}
+} */
 
 body,
 .scrollable {
