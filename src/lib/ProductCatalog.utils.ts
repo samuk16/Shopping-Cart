@@ -69,8 +69,6 @@ function generationPaginationRange(
 ) {
   const pagRange = [DOTS];
   const firstIndex = currentPage - (isMobile ? 2 : 3);
-  // const firstIndex = currentPage - 3;
-  // const lastIndex = currentPage + 2;
 
   let pageCount = firstIndex;
   for (let i = 1; i <= pageRangeDisplayed; i++) {
@@ -90,12 +88,14 @@ function generaionPaginationFirstAndLastItems(
 
   let pageCount = 0;
   if (currentPage < pageRangeDisplayed && totalPages > pageRangeDisplayed) {
+
     for (let i = 1; i <= pageRangeDisplayed; i++) {
       pageCount++;
       pagRange.push(pageCount.toString());
     }
     pagRange.push(DOTS);
-  } else if (totalPages < pageRangeDisplayed) {
+  } else if (totalPages <= pageRangeDisplayed) {
+
     for (let i = 1; i <= totalPages; i++) {
       pageCount++;
       pagRange.push(pageCount.toString());
@@ -103,6 +103,7 @@ function generaionPaginationFirstAndLastItems(
   } else if (currentPage >= totalPages - pageRangeDisplayed) {
     pageCount = totalPages - pageRangeDisplayed;
     pagRange.push(DOTS);
+
     for (let i = 1; i <= pageRangeDisplayed; i++) {
       pageCount++;
       pagRange.push(pageCount.toString());
