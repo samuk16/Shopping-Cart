@@ -1,5 +1,6 @@
 import { defer, json, LoaderFunctionArgs } from "react-router-dom";
-
+const proxyUrl = "https://corsproxy.io/?";
+const targetUrl = "https://bymykel.github.io/CSGO-API/api/en/skins.json";
 export async function loader3({ params, request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
   const searchFilter = url.searchParams.get("rarity");
@@ -10,10 +11,9 @@ export async function loader3({ params, request }: LoaderFunctionArgs) {
     return json({ error: "Weapon name is required" }, { status: 400 });
   }
 
-  const data = fetch(
-    "https://bymykel.github.io/CSGO-API/api/en/skins.json",
+  const data =  fetch(
+    `${proxyUrl}${encodeURIComponent(targetUrl)}`,
   ).then((res) => res.json());
-
   return defer({
     data: data,
     type: "skins",
@@ -29,8 +29,8 @@ export async function loader3({ params, request }: LoaderFunctionArgs) {
 export async function loaderSearch({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
   const q = url.searchParams.get("q");
-  const data = fetch(
-    "https://bymykel.github.io/CSGO-API/api/en/skins.json",
+  const data =  fetch(
+    `${proxyUrl}${encodeURIComponent(targetUrl)}`,
   ).then((res) => res.json());
 
   return defer({ data, q, type: "search" });
@@ -40,8 +40,8 @@ export async function allSkinsLoader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
   const searchFilter = url.searchParams.get("rarity");
   const searchFilter1 = url.searchParams.get("stattrak");
-  const data = fetch(
-    "https://bymykel.github.io/CSGO-API/api/en/skins.json",
+  const data =  fetch(
+    `${proxyUrl}${encodeURIComponent(targetUrl)}`,
   ).then((res) => res.json());
 
   // return weapon;
@@ -64,10 +64,12 @@ export async function otherLoader({ request, params }: LoaderFunctionArgs) {
   const searchFilter2 = url.searchParams.get("tournamentTeam");
   const searchFilter3 = url.searchParams.get("stattrak");
 
-  const data = fetch(
-    `https://bymykel.github.io/CSGO-API/api/en/${test455}.json`,
-  ).then((res) => res.json());
+  const proxyUrl = "https://corsproxy.io/?";
+  const targetUrl = `https://bymykel.github.io/CSGO-API/api/en/${test455}.json`;
 
+  const data =  fetch(
+    `${proxyUrl}${encodeURIComponent(targetUrl)}`,
+  ).then((res) => res.json());
   return defer({
     data: data,
     type: test455,
